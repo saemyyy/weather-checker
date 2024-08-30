@@ -1,13 +1,15 @@
+//import assets and important things from react itself
 import sunny from "../assets/images/sunny.png";
 import cloudy from "../assets/images/cloudy.png";
 import rainy from "../assets/images/rainy.png";
 import snowy from "../assets/images/snowy.png";
 import { useState } from "react";
 
+// function that checks the weather and pulls from the api (with key)
 const WeatherChecker = () => {
   const [data, setData] = useState([]);
   const [location, setLocation] = useState("");
-  const api_key = "does not work without api key";
+  const api_key = "api key on website";
 
   const handleInputChange = (e) => {
     setLocation(e.target.value);
@@ -22,12 +24,14 @@ const WeatherChecker = () => {
     setLocation("");
   };
 
+  // function for "Enter" Key support
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       search();
     }
   };
 
+  // function that assigns what weather uses what image
   const weatherImages = {
     Clear: sunny,
     Clouds: cloudy,
@@ -41,9 +45,37 @@ const WeatherChecker = () => {
     ? weatherImages[data.weather[0].main]
     : null;
 
+  const backgroundImages = {
+    Clear: "linear-gradient(to right, #f3b07,#fcd283",
+    Clouds: "linear-gradient(to right, #57d6d4, #71eeec",
+    Rain: "linear-gradient(to right, #5bc8fb, #80eaff",
+    Snow: "linear-gradient(to right, #aff2ff, #fff",
+    Haze: "linear-gradient(to right, #57d6d4, #71eeec",
+  };
+
+  const backgroundImage = data.weather
+    ? backgroundImages[data.weather[0].main]
+    : "linear-gradient(to right, #f3b07, #fcd283";
+
+  function getDate() {
+    const today = new Date();
+    const month = today.getMonth() + 1;
+    const year = today.getFullYear();
+    const date = today.getDate();
+    return `${date}.${month}.${year}`;
+  }
+
   return (
-    <div className="container">
-      <div className="weather-app">
+    <div className="container" style={{ backgroundImage }}>
+      <div
+        className="weather-app"
+        style={{
+          backgroundImage:
+            backgroundImage && backgroundImage.replace
+              ? backgroundImage.replace("to right", "to top")
+              : null,
+        }}
+      >
         <div className="search">
           <div className="search-top">
             <i className="fa-solid fa-location-dot"></i>
@@ -70,14 +102,14 @@ const WeatherChecker = () => {
             style={{ display: weatherImage ? "block" : "none" }}
           />
           <div className="weather-type">
-            {data.weather ? data.weather.main : null}
+            {data.weather ? data.weather[0].main : null}
           </div>
           <div className="temp">
             {data.main ? Math.round(data.main.temp) + "°" : "0°"}
           </div>
         </div>
         <div className="weather-date">
-          <p>Fri, 3 May</p>
+          <p>{getDate()}</p>
         </div>
         <div className="weather-data">
           <div className="humidity">
