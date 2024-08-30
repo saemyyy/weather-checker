@@ -75,7 +75,7 @@
 }
 .weather-type {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 2rem;
