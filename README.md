@@ -1,8 +1,21 @@
-# React + Vite
+# React Weather App
+## About the Project
+This React Weather App is the Subject of a School Project of the BBZ-CFP Biel/Bienne. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+- **Input Field**, to look up desired location.
+- **Interactiv Assets**, that adjust on the **Weather-Type**.
+- **Weather-Type** Text that shows what kind of Type the Weather is, e.g. Clear.
+- **Windspeed** Text, that Checks the speed of the Wind in m/s, converts and shows it in km/h.
+- **Humidity**, where the Humidity is shown in percent.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to work on it
+If you want to use this code you can `cd` to a fitting location and write/copy-paste
+```
+git clone https://github.com/saemyyy/weather-checker.git
+```
+After cloning the Repo you can open **VSC** and a **New Terminal**
+In the new Terminal you type following command to run the React App on a Server (where you can view live changes and use the app)
+```
+npm run dev
+```
