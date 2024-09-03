@@ -15,7 +15,7 @@ This React Weather App is the Subject of a School Project of the BBZ-CFP Biel/Bi
 ```
 git clone https://github.com/saemyyy/weather-checker.git
 ```
-2. After cloning the Repo you can open **VSC** and a **New Terminal**
+2. After cloning the Repo you can open the Project **VSC** and a **New Terminal**
 In the new Terminal you type following command to run the React App on a Server (where you can view live changes and use the app)
 ```
 npm run dev
