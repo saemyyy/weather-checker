@@ -20,4 +20,4 @@ In the new Terminal you type following command to run the React App on a Server 
 ```
 npm run dev
 ```
-
+3. Following starting the App you can enter a location in the Input Field and check the Weather in that place
