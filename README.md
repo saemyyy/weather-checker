@@ -3,11 +3,11 @@
 This React Weather App is the Subject of a School Project of the BBZ-CFP Biel/Bienne. 
 
 ## Features
-- 💬  **Input Field**, to look up desired location.
-- 🌆  **Interactiv Assets**, that adjust on the **Weather-Type**.
-- 🌡️  **Weather-Type** Text that shows what kind of Type the Weather is, e.g. Clear.
-- 💨  **Windspeed** Text, that Checks the speed of the Wind in m/s, converts and shows it in km/h.
-- 💧  **Humidity**, where the Humidity is shown in percent.
+- **Input Field**, to look up desired location. 💬
+- **Interactiv Assets**, that adjust on the **Weather-Type**. 🌆
+- **Weather-Type** Text that shows what kind of Type the Weather is, e.g. Clear. 🌡️
+- **Windspeed** Text, that Checks the speed of the Wind in m/s, converts and shows it in km/h. 💨
+- **Humidity**, where the Humidity is shown in percent. 💧
 
 ## How to work on it
 1. If you want to use this code you can `cd` (in Terminal) to a fitting location and write/copy-paste following command
