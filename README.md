@@ -10,12 +10,14 @@ This React Weather App is the Subject of a School Project of the BBZ-CFP Biel/Bi
 - **Humidity**, where the Humidity is shown in percent.
 
 ## How to work on it
-If you want to use this code you can `cd` to a fitting location and write/copy-paste
+1. If you want to use this code you can `cd` (in Terminal) to a fitting location and write/copy-paste following command
+
 ```
 git clone https://github.com/saemyyy/weather-checker.git
 ```
-After cloning the Repo you can open **VSC** and a **New Terminal**
+2. After cloning the Repo you can open **VSC** and a **New Terminal**
 In the new Terminal you type following command to run the React App on a Server (where you can view live changes and use the app)
 ```
 npm run dev
 ```
+
