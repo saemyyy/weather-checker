@@ -20,4 +20,10 @@ In the new Terminal you type following command to run the React App on a Server 
 ```
 npm run dev
 ```
-3. Following starting the App you can enter a location in the Input Field and check the Weather in that place
+3. If it gives out an error you might have to install vite. Use following command in the VSC command line
+```
+npm install vite
+```
+run 2. again and start using the App by entering a location and checking the weather
+
+**Please keep in mind that the app doesn't work without an api key**
