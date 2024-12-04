@@ -9,7 +9,7 @@ import { useState } from "react";
 const WeatherChecker = () => {
   const [data, setData] = useState([]);
   const [location, setLocation] = useState("");
-  const api_key = "api key on website";
+  const api_key = import.meta.env.VITE_OPENWEATHER_API_KEY;
 
   const handleInputChange = (e) => {
     setLocation(e.target.value);
